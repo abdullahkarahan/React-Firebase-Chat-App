@@ -1,0 +1,101 @@
+.formContainer {
+  background-image: url(../../assets/images/register.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  .formWrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a1e3a;
+    border-radius: 8px;
+    width: 400px;
+    height: 400px;
+    form {
+      position: absolute;
+      inset: 4px;
+      background-color: #0a1e3a;
+      border-radius: 8px;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 10px;
+
+      input {
+        position: relative;
+        width: 250px;
+        margin-top: 10px;
+        padding: 0.4rem;
+        border: none;
+        outline: none;
+        background: transparent;
+        color: #fff;
+        font-size: 1em;
+        letter-spacing: 0.05em;
+        border-bottom: 1px solid #49aaf0;
+      }
+      .register-logo {
+        width: 150px;
+        height: 40px;
+      }
+      .title {
+        color: #49aaf0;
+      }
+      label {
+        padding: 5px 0px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 10px;
+        img {
+          width: 25px;
+          height: 25px;
+        }
+        span {
+          color: #0a1e3a;
+        }
+      }
+
+      .register-btn {
+        // margin: 10px 5px;
+        // display: inline-block;
+        border: none;
+        background-color: #87e5f5;
+        color: #0a1e3a;
+        padding: 6px 20px;
+        border-radius: 6px;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        width: 100px;
+        font-weight: bold;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        &:active {
+          transform: scale(0.96);
+        }
+      }
+      .question {
+        color: #0a1e3a;
+        margin: 0;
+      }
+
+      .login-link {
+        color: #0a1e3a;
+        text-decoration: underline;
+      }
+    }
+  }
+}
